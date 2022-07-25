@@ -1,0 +1,904 @@
+@import './scss/colors';
+@import './scss/tools';
+@import './scss/variables';
+
+
+
+
+
+
+
+
+.navbarOptionsMenuIcon{
+    @include flexBox(row, flex-start);
+    height: fit-content !important;
+    width: 100% !important;
+    padding: 10px;
+    font-size : 20px;
+    position: absolute;
+    top:0;
+    left:0;
+    margin-left: 5px;
+    margin-top: 5px;
+
+
+    .navbarOptionsMenuIconIcon{
+        color:white;
+        padding: 8px !important;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        z-index: 45;
+        border-radius: 4px; 
+        display: none;
+        border: 1px solid white;
+   
+    }
+}
+
+
+
+.afterHeaderContainer{
+    width: 100% !important;
+    height: 650px !important;
+    height: fit-content;
+    position: relative;
+
+   
+
+
+    .afterHeaderContainerCover{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+
+        .descriptionContainer{
+            width: 50%;
+            height: 100%;
+            @include flexBox();
+
+            div{
+                width: 50%;
+                color:white;
+                span{
+                    font-size: 50px;
+                    font-weight: 1000;
+                }
+
+                div{
+                    text-align: justify;
+                    width: 100%;
+                    margin-top: 30px;
+                    font-size: 18px;
+                }
+
+                .donwloadPlatform{
+                    background-color: #F7D9C4;
+                    width: fit-content;
+                    padding: 18px 30px 18px 30px;
+                    color: black;
+                    font-weight:1000;
+                    font-size: 20px;
+                    word-spacing: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+.bodyContainer{
+    background-color: $gray-color;
+    padding-top: 50px;
+
+    .userInfoPlatformContainer{
+        @include flexBox();
+        flex-wrap: wrap;
+        background-color:$gray-color;
+        height: auth !important;
+
+
+        .userInfoContainer{
+            width: 100%;
+            height: fit-content;
+            @include flexBox();
+
+            .userInfoImageContainer{
+                width: 25%;
+                height: 500px;
+                position: relative;
+                box-shadow: 0px 10px 15px gray;
+                border-radius: 10px;
+
+
+                .img{
+                    border-radius: 10px;
+                }
+            }
+
+            .userInfoDescription{
+                height: 100%;
+                width: 30%;
+                margin-left: 3%;
+
+                div{
+
+                    h1{
+                        width: fit-content;
+                    }
+                    .userInfoStatitics{
+                        @include flexBox();
+                        width: fit-content;
+
+                        div{
+                            @include flexBox(column);
+                            background-color: white;
+                            margin-left: 20px;
+                            padding: 20px;
+                            border-radius: 5px;
+
+                            span{
+                                font-size: 15px
+                            }
+                        }
+
+                        div:first-child{
+                            margin-left: 0;
+                        }
+                    }
+                    p{
+                        width: 100%;
+                        margin-top: 20px;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+
+        .userPlatformContainer{
+            width: 100%;
+            height: fit-content;
+            @include flexBox();
+            margin-top: 80px;
+
+
+            .userPlatformMain{
+                height: 500px;
+                width: 60%;
+                position: relative;
+                @include flexBox(row, flex-end, flex-end);
+
+                .userPlatformImageContainer{
+                    width: 35%;
+                    height: 85%;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    box-shadow: 0px 10px 15px gray;
+                    border-radius: 10px;
+                    margin-right: 20px;
+
+                    .img{
+                        border-radius: 10px;
+                    }
+                }
+
+                .userPlatformDescription{
+                    width: 100%;
+                    height: 80%;
+                    background-color: white;
+                    padding-left: 20px;
+                    padding-top: 20px;
+
+                    h1{
+                        width: 20%;
+                        font-size: 40px;
+                        font-weight: 1000;
+                    }
+
+
+                    p{
+                        width: 50%;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    
+    .supportedByCyrex{
+        width: 100%;
+        height: 100px;
+        margin-top: 100px;
+        @include flexBox();
+        font-size: 28px;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        background-color: white;
+    }
+    
+    
+    .tradeHistoryContainer{
+        width: 100%;
+        height: 600px;
+        margin-top: 100px;
+        @include flexBox(column);
+    
+        .tradeHistory{
+            background-color: white;
+            padding:20px;
+            height: 600px;
+            width: 70%;
+            border-radius: $border-radius;
+    
+            .carouselContainer{
+                height: 500px !important;
+    
+                div{
+                    height: 100%;
+                    width: 100%;
+    
+                    .carouselItemImage{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: co;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    .plansContainer{
+        margin-top: 120px;
+        height: 650px;
+        @include flexBox(column, flex-start, center);
+        background-color: #242323;
+        padding-bottom: 50px;
+    
+        h1{
+            color:white;
+            font-weight: 1000;
+            font-size: 45px;
+            margin-top: 50px;
+        }
+    
+        div{
+            width: 100%;
+            height: 90%;
+            @include flexBox();
+    
+            .plansItem{
+                margin-left:50px;
+                width: 20%;
+                height: 100%;
+                position: relative;
+        
+                .plansImageContainer{
+                    width: 100%;
+                    height: 100%;
+                }
+    
+                .plansItemDescription{
+                    width: 95%;
+                    height: 40%;
+                    background-color: #417586;
+                    position: absolute;
+                    bottom:0;
+                    left:0;
+                }
+            }
+        }
+    }
+    
+    
+    .getInTouch{
+        margin-top: 50px;
+        width: 100%;
+        height: fit-content;
+        background-color: white;
+        padding: 50px;
+        @include flexBox();
+    
+        .formContainer{
+            padding: 30px 0px 30px 100px;
+            width: 50%;
+            height: 90%;
+            background-color: #F3F6F4;
+    
+            h2{
+                width: 80%;
+            }
+    
+            .formContainerForm{
+                width: 80%;
+                margin-top: 50px;
+    
+    
+    
+                
+    
+                div{
+                    padding: 0 !important;
+    
+                    .formItme{
+                        width: 100% !important;
+    
+    
+                        .formItmeInput{
+                            width: 100% !important;
+                        }
+                    }
+    
+                    .formTextArea{
+                        width: 100%;
+    
+                        textarea{
+                            width: 100% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:576px) {
+    .navbarOptionsMenuIconIcon{
+        display: flex !important;
+    }
+    
+    .afterHeaderContainer{
+        height: 550px !important;
+
+        .afterHeaderContainerCover{
+            height: 100%;
+            bottom: 0;
+
+            .descriptionContainer{
+                width: 90%;
+                align-items: center;
+                margin-left: 15px;
+                padding-bottom: 50px;
+
+                div{
+                    width: 100%;
+                    margin-top: auto;
+
+                    span{
+                        font-size: 40px;
+                    }
+
+                    div{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .supportedByCyrex{
+        span{
+            font-size: 20px;
+        }
+    }
+    .userInfoPlatformContainer{
+
+        .userInfoContainer{
+            flex-direction: column !important;
+
+            .userInfoImageContainer{
+                width: 95% !important;
+                height: 400px !important;
+            }
+
+            .userInfoDescription{
+                margin-top: 40px;
+                margin-right: auto;
+                width: 95% !important;
+
+                div{
+                    
+
+                    .userInfoStatitics{
+                        flex-wrap: wrap;
+                        justify-content: flex-start !important;
+
+                        div{
+                            margin-top: 20px;
+                            margin-left: 0 !important;
+                        }
+
+                        div:nth-child(2){
+                            margin-left: 20px !important;
+                        }
+                    }
+                    p{
+                        width: 100% !important;
+                        margin-top: 30px !important;
+                    }
+                }
+            }
+        }
+
+        .userPlatformContainer{
+            height: fit-content !important;
+            
+
+            .userPlatformMain{
+                width: 95% !important;
+                height: fit-content !important;
+                flex-direction: column !important;
+
+
+                .userPlatformImageContainer{
+                    width: 100% !important;
+                    margin-right: 0 !important;
+                    height: 300px !important;
+                    position: inherit !important;
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+
+                    .img{
+                        border-radius: 0 !important;
+                        border-top-left-radius: 10px !important;
+                        border-top-right-radius: 10px !important;
+                    }
+                }
+
+                .userPlatformDescription{
+                    width: 100%;
+                    border-bottom-left-radius: 10px !important;
+                    border-bottom-right-radius: 10px !important;
+                    h1{
+                        font-size: 30px !important;
+                    }
+                    p{
+                        width: 100% !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .tradeHistoryContainer{
+        width: 100% !important;
+
+        .tradeHistory{
+            width:  95% !important;
+        }
+    }
+
+    .plansContainer{
+        height: fit-content !important;
+
+        div{
+            flex-direction: column !important;
+          
+            .plansItem{
+                width: 80% !important;
+                height: 450px !important;
+                margin-left: 0 !important;
+                margin-top: 50px;
+
+                .plansImageContainer{
+                    background-color: pink;
+                }
+
+                .plansItemDescription{
+                    background-color: yellow;
+                }
+            }   
+        }
+    }
+
+    .getInTouch{
+        padding: 0 !important;
+
+        .formContainer{
+            width: 90% !important;
+            padding: 0 !important;
+            @include flexBox(column, center, center);
+            margin-top: 50px !important;
+            padding: 20px !important;
+
+            h2{
+                width: 90%;
+            }
+
+            .formContainerForm{
+                padding: 0 !important;
+                width: 100% !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (min-width:576px) and (max-width:766px) {
+    .navbarOptionsMenuIconIcon{
+        display: flex !important;
+    }
+
+    .afterHeaderContainer{
+        height: 550px !important;
+
+        .afterHeaderContainerCover{
+            height: 100%;
+            bottom: 0;
+
+            .descriptionContainer{
+                width: 90%;
+                align-items: center;
+                margin-left: 15px;
+                padding-bottom: 50px;
+
+                div{
+                    width: 100%;
+                    margin-top: auto;
+
+                    span{
+                        font-size: 40px;
+                    }
+
+                    div{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .supportedByCyrex{
+        span{
+            font-size: 20px;
+        }
+    }
+    .userInfoPlatformContainer{
+
+        .userInfoContainer{
+            flex-direction: column !important;
+
+            .userInfoImageContainer{
+                width: 95% !important;
+                height: 400px !important;
+            }
+
+            .userInfoDescription{
+                margin-top: 40px;
+                margin-right: auto;
+                width: 95% !important;
+
+                div{
+                    
+
+                    .userInfoStatitics{
+                        flex-wrap: wrap;
+                        justify-content: flex-start !important;
+
+                        div{
+                            margin-top: 20px;
+                            margin-left: 0 !important;
+                        }
+
+                        div:nth-child(2){
+                            margin-left: 20px !important;
+                        }
+                    }
+                    p{
+                        width: 100% !important;
+                        margin-top: 30px !important;
+                    }
+                }
+            }
+        }
+
+        .userPlatformContainer{
+            height: fit-content !important;
+            
+
+            .userPlatformMain{
+                width: 95% !important;
+                height: fit-content !important;
+                flex-direction: column !important;
+
+
+                .userPlatformImageContainer{
+                    width: 100% !important;
+                    margin-right: 0 !important;
+                    height: 300px !important;
+                    position: inherit !important;
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+
+                    .img{
+                        border-radius: 0 !important;
+                        border-top-left-radius: 10px !important;
+                        border-top-right-radius: 10px !important;
+                    }
+                }
+
+                .userPlatformDescription{
+                    width: 100%;
+                    border-bottom-left-radius: 10px !important;
+                    border-bottom-right-radius: 10px !important;
+                    h1{
+                        font-size: 30px !important;
+                    }
+                    p{
+                        width: 100% !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .tradeHistoryContainer{
+        width: 100% !important;
+
+        .tradeHistory{
+            width:  95% !important;
+        }
+    }
+
+    .plansContainer{
+        height: fit-content !important;
+
+        div{
+            flex-direction: column !important;
+          
+            .plansItem{
+                width: 80% !important;
+                height: 450px !important;
+                margin-left: 0 !important;
+                margin-top: 50px;
+
+                .plansImageContainer{
+                    background-color: pink;
+                }
+
+                .plansItemDescription{
+                    background-color: yellow;
+                }
+            }   
+        }
+    }
+
+    .getInTouch{
+        padding: 0 !important;
+
+        .formContainer{
+            width: 90% !important;
+            padding: 0 !important;
+            @include flexBox(column, center, center);
+            margin-top: 50px !important;
+            padding: 20px !important;
+
+            h2{
+                width: 90%;
+            }
+
+            .formContainerForm{
+                padding: 0 !important;
+                width: 100% !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .afterHeaderContainer{
+        height: 550px !important;
+
+        .afterHeaderContainerCover{
+            height: 100%;
+            bottom: 0;
+
+            .descriptionContainer{
+                width: 90%;
+                align-items: center;
+                margin-left: 15px;
+                padding-bottom: 50px;
+
+                div{
+                    width: 100%;
+                    margin-top: auto;
+
+                    span{
+                        font-size: 40px;
+                    }
+
+                    div{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .supportedByCyrex{
+        span{
+            font-size: 20px;
+        }
+    }
+    .userInfoPlatformContainer{
+
+        .userInfoContainer{
+            flex-direction: column !important;
+
+            .userInfoImageContainer{
+                width: 95% !important;
+                height: 400px !important;
+            }
+
+            .userInfoDescription{
+                margin-top: 40px;
+                margin-right: auto;
+                width: 95% !important;
+
+                div{
+                    
+
+                    .userInfoStatitics{
+                        flex-wrap: wrap;
+                        justify-content: flex-start !important;
+
+                        div{
+                            margin-top: 20px;
+                            margin-left: 0 !important;
+                        }
+
+                        div:nth-child(2){
+                            margin-left: 20px !important;
+                        }
+                    }
+                    p{
+                        width: 100% !important;
+                        margin-top: 30px !important;
+                    }
+                }
+            }
+        }
+
+        .userPlatformContainer{
+            height: fit-content !important;
+            
+
+            .userPlatformMain{
+                width: 95% !important;
+                height: fit-content !important;
+                flex-direction: column !important;
+
+
+                .userPlatformImageContainer{
+                    width: 100% !important;
+                    margin-right: 0 !important;
+                    height: 300px !important;
+                    position: inherit !important;
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+
+                    .img{
+                        border-radius: 0 !important;
+                        border-top-left-radius: 10px !important;
+                        border-top-right-radius: 10px !important;
+                    }
+                }
+
+                .userPlatformDescription{
+                    width: 100%;
+                    border-bottom-left-radius: 10px !important;
+                    border-bottom-right-radius: 10px !important;
+                    h1{
+                        font-size: 30px !important;
+                    }
+                    p{
+                        width: 100% !important;
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .tradeHistoryContainer{
+        width: 100% !important;
+
+        .tradeHistory{
+            width:  95% !important;
+        }
+    }
+
+    .plansContainer{
+        height: fit-content !important;
+
+        div{
+            flex-direction: column !important;
+          
+            .plansItem{
+                width: 80% !important;
+                height: 450px !important;
+                margin-left: 0 !important;
+                margin-top: 50px;
+
+                .plansImageContainer{
+                    background-color: pink;
+                }
+
+                .plansItemDescription{
+                    background-color: yellow;
+                }
+            }   
+        }
+    }
+
+    .getInTouch{
+        padding: 0 !important;
+
+        .formContainer{
+            width: 90% !important;
+            padding: 0 !important;
+            @include flexBox(column, center, center);
+            margin-top: 50px !important;
+            padding: 20px !important;
+
+            h2{
+                width: 90%;
+            }
+
+            .formContainerForm{
+                padding: 0 !important;
+                width: 100% !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+    
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+    .userInfoPlatformContainer{
+        .userInfoContainer{
+            .userInfoImageContainer{
+                width: 35% !important;
+            }
+        }
+
+        .userPlatformContainer{
+            .userPlatformDescription{
+                height: fit-content !important;
+            }
+        }
+    }
+}
+
+
+*@hasanvajdi99609970241939412187githubhasanvajdi*@
+
+
+@media (min-width:1200px) and (max-width:1600px) {
+    
+}
+
+
+@media (min-width:1600px) and (max-width:2000px) {
+    
+}
